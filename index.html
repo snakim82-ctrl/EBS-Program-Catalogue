@@ -31,6 +31,40 @@
   </div>
 </div>
 
+<button class="admin-gear" id="adminGear" title="Admin mode">⚙</button>
+
+<div class="form-overlay hidden" id="pwOverlay">
+  <div class="form-panel">
+    <h2>Admin Login</h2>
+    <form id="pwForm">
+      <label>Password<input type="password" name="password" autocomplete="off" /></label>
+      <p class="form-error hidden" id="pwError">Incorrect password.</p>
+      <button type="submit" class="primary-btn">Confirm</button>
+    </form>
+  </div>
+</div>
+
+<div class="form-overlay hidden" id="editOverlay">
+  <div class="form-panel">
+    <h2 id="editHeading">Program</h2>
+    <form id="editForm">
+      <label>Title (English) *<input type="text" name="titleEn" required /></label>
+      <label>Genre<input type="text" name="genre" /></label>
+      <label>Year<input type="text" name="year" /></label>
+      <label>Synopsis<textarea name="synopsis" rows="4"></textarea></label>
+      <label>Thumbnail image (choose to replace)<input type="file" name="thumb" accept="image/*" /></label>
+      <label>Trailer video (choose to replace)<input type="file" name="video" accept="video/*" /></label>
+      <p class="form-error hidden" id="editError"></p>
+      <button type="submit" class="primary-btn">Save</button>
+    </form>
+  </div>
+</div>
+
+<div class="admin-savebar hidden" id="saveBar">
+  <span id="saveBarStatus">Admin mode — edit or add cards, then download the updated data file to send back.</span>
+  <button id="exportBtn">Download changes (.js)</button>
+</div>
+
 <script src="programs.js"></script>
 <script src="app.js"></script>
 </body>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>EBS Program Catalogue</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="hero">
+  <h1>EBS Program Catalogue</h1>
+</div>
+
+<main>
+  <div class="grid" id="grid"></div>
+</main>
+
+<footer>This page is a buyer preview. Trailers are short, low-resolution preview clips. Full versions are delivered separately.</footer>
+
+<div class="lightbox hidden" id="lightbox">
+  <div class="lightbox-panel">
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+    <div class="lightbox-video"><video id="lightboxVideo" controls></video></div>
+    <div class="lightbox-info">
+      <p class="kicker" id="lbKicker" style="color:var(--accent)"></p>
+      <h2 id="lbTitle"></h2>
+      <p class="sub" id="lbSub"></p>
+      <p class="synopsis" id="lbSynopsis"></p>
+    </div>
+  </div>
+</div>
+
+<script src="programs.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
